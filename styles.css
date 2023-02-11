@@ -23,6 +23,32 @@ ul {
 }
 
 /* Оформлення Header */
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.head-section-container { 
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contacts-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .logo-blue {
     color: var(--color-iris);
 }
