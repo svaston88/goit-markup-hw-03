@@ -23,6 +23,7 @@ ul {
 }
 
 p,
+ul,
 h1,
 h2,
 h3,
@@ -30,12 +31,12 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 /* Оформлення Header */
 .container {
-    display: flex;
-    align-items: center;
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -61,7 +62,6 @@ h6 {
 .contacts-container {
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
 .logo-blue {
@@ -129,9 +129,8 @@ h6 {
 }
 
 .hero-title {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+    width: 496px;
+    padding-top: 188px;
     font-size: 56px;
     line-height: 1.07;
     color: var(--total-white);
@@ -145,8 +144,9 @@ h6 {
 }
 
 .button-hero {
-    height: 56px;
-    width: 169px;
+    padding: 16px 32px;
+    margin-bottom: 188px;
+    border-radius: 4px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -172,10 +172,13 @@ h6 {
 
 /* Оформлення Main points */
 .main-points-container {
-    display: flex;
-    gap: 24px;
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.main-points-ul-container {
+    display: flex;
+    width: calc(1198-3*24/4);
 }
 
 .main-points-h3 {
@@ -201,6 +204,7 @@ h6 {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    padding-bottom: 120px;
 }
 
 .what-images-container {
@@ -208,11 +212,9 @@ h6 {
     align-items: center;
     justify-items: center;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .h2-what-are-we-doing {
-    display: flex;
     align-items: center;
     font-size: 36px;
     line-height: 1.11;
@@ -242,7 +244,6 @@ h6 {
 }
 
 .our-team-heading {
-    display: flex;
     align-items: center;
     align-content: center;
     font-size: 36px;
@@ -267,15 +268,13 @@ h6 {
 }
 
 /* Оформлення Footer */
-.footer-container {
+/* .footer-container {
     display: block;
     align-items: center;
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+} */
 
 .footer-logo-container {
     display: flex;
@@ -285,18 +284,16 @@ h6 {
 
 .footer-bgc {
     background-color: var(--color-primary);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     color: var(--color-light);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    height: 110px;
 }
 
 /* Оформлення сторінки Portfolio */
