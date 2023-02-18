@@ -11,6 +11,7 @@
 /* Видалити потім */
 .hero-background-title {
     background-color: #2E2F42;
+    display: flex;
 }
 
 body {
@@ -40,6 +41,13 @@ h6 {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-container {
@@ -145,8 +153,10 @@ h6 {
 
 .button-hero {
     padding: 16px 32px;
+    margin-top: 48px;
     margin-bottom: 188px;
     border-radius: 4px;
+    display: flex;
 
     font-family: 'Roboto';
     font-style: normal;
