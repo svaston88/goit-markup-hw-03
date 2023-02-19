@@ -47,8 +47,7 @@ h6 {
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .nav-container {
@@ -79,9 +78,11 @@ h6 {
 }
 
 .logo {
+    display: block;
+    padding: 24px 0 24px;
     font-family: 'Raleway';
     font-weight: 800;
-    font-size: 18px;
+    font-size: 18px; 
     line-height: 1.33;
     letter-spacing: 0.03em;
     color: var(--color-primary);
@@ -94,6 +95,7 @@ h6 {
 }
 
 .header-section {
+    padding: 24px 0 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -111,6 +113,7 @@ h6 {
 }
 
 .header-contacts {
+    padding: 24px 0 24px;
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -154,9 +157,11 @@ h6 {
 }
 
 .button-hero {
+    border: none;
     padding: 16px 32px;
     margin-top: 48px;
-    border-radius: 4px; 
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     font-family: 'Roboto';
     font-weight: 500;
@@ -193,6 +198,10 @@ h6 {
 .main-points-li-container {
     width: calc((100% - 3 * 24px) / 4);
     margin-right: 24px;
+}
+
+.main-points-li-container:last-child {
+    margin-right: 0;
 }
 
 .main-points-h3 {
@@ -256,13 +265,13 @@ h6 {
 
 .our-team-section {
     background-color: var(--color-background-ocean);
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
 .our-team-heading {
     text-align: center;
     margin-bottom: 72px;
-    padding-top: 120px;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -282,7 +291,7 @@ h6 {
 }
 
 .our-team-name {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -307,7 +316,6 @@ h6 {
 } */
 
 .footer-logo-container {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 16px;
@@ -337,12 +345,15 @@ h6 {
 
 .buttons-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-top: 96px;
+    margin-bottom: 72px;
 }
 
 .buttons-portfolio {
+    border: none;
+    margin-right: 24px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -352,6 +363,10 @@ h6 {
     letter-spacing: 0.04em;
     cursor: pointer;
     padding: 12px 24px;
+}
+
+.buttons-portfolio:last-child {
+    /* margin: 0; */
 }
 
 .buttons-portfolio:hover, .buttons-portfolio:focus {
@@ -365,14 +380,33 @@ h6 {
 }
 
 /* Оформлення Main products */
+
+.portfolio-section {
+    padding-bottom: 120px;
+}
+
 .portfolio-plates-container {
     display: flex;
     align-items: center;
-    max-width: 1158px;
-    padding: 0 15px 120px;
-    margin: 0 auto;
     gap: 24px;
     flex-wrap: wrap;
+
+}
+
+.porfolio-li-plates {
+    width: calc((100% - 3 * 24px) / 3);
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+}
+
+.portfolio-plates-images {
+    display:  block;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolo-plates-text {
+    padding: 32px 0 32px;
 }
 
 .main-products-h3 {
