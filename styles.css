@@ -348,7 +348,6 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -383,6 +382,7 @@ h6 {
 /* Оформлення Main products */
 
 .portfolio-section {
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 
@@ -391,11 +391,15 @@ h6 {
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
-
 }
 
 .porfolio-li-plates {
     width: calc((100% - 3 * 24px) / 3);
+    margin-bottom: 48px;
+}
+
+.porfolio-li-plates:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .portfolio-plates-images {
