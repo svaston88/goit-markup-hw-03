@@ -79,7 +79,7 @@ h6 {
 
 .logo {
     display: block;
-    margin: 0 0 16px;
+    /* margin: 0 0 16px; */
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px; 
@@ -329,6 +329,7 @@ h6 {
 }
 
 .footer-text {
+    margin-top: 16px;
     color: var(--color-light);
     font-size: 16px;
     line-height: 1.5;
@@ -365,9 +366,13 @@ h6 {
     padding: 12px 24px;
 }
 
-.buttons-container:last-child {
-    /* margin: 0; */
-}
+/* .buttons-portfolio:last-child {
+    margin: 0;
+} */
+
+/* .li-buttons:not(:last-child) {
+    margin-right: 24px;
+  } */
 
 .buttons-portfolio:hover, .buttons-portfolio:focus {
     font-family: 'Roboto';
